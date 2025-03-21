@@ -10,28 +10,83 @@
 
     <h2>Dog Adoption Application</h2>
 
+    <!-- Table Representation -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Field</th>
+                <th>ID</th>
+                <th>Type</th>
+                <th>Placeholder</th>
+                <th>Other Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Name</td>
+                <td>name</td>
+                <td>text</td>
+                <td>Name</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td>phone</td>
+                <td>text</td>
+                <td>Phone Number</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>address</td>
+                <td>text</td>
+                <td>Address</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Have you ever lived with a Dog before?</td>
+                <td>checkbox</td>
+                <td>checkbox</td>
+                <td></td>
+                <td>Value should be: "Have you ever lived with a Dog before?"</td>
+            </tr>
+            <tr>
+                <td>Please select your preferred breeds</td>
+                <td>multiSelect</td>
+                <td>select</td>
+                <td></td>
+                <td>Make this as a multi-select box with at least 3 options</td>
+            </tr>
+            <tr>
+                <td>Submit</td>
+                <td>submit</td>
+                <td>submit</td>
+                <td></td>
+                <td>Value should be: "Submit"</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <!-- Form Representation -->
     <form action="#" method="POST">
-        <!-- Name Field -->
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" placeholder="Name" required>
         <br><br>
 
-        <!-- Phone Number Field -->
         <label for="phone">Phone Number:</label>
         <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
         <br><br>
 
-        <!-- Address Field -->
         <label for="address">Address:</label>
         <input type="text" id="address" name="address" placeholder="Address" required>
         <br><br>
 
-        <!-- Checkbox for Living with a Dog Before -->
         <input type="checkbox" id="lived_with_dog" name="lived_with_dog" value="Have you ever lived with a Dog before?">
         <label for="lived_with_dog">Have you ever lived with a Dog before?</label>
         <br><br>
 
-        <!-- Multi-Select Dropdown for Preferred Breeds -->
         <label for="breeds">Please select your preferred breeds:</label>
         <select id="breeds" name="breeds" multiple required>
             <option value="Labrador Retriever">Labrador Retriever</option>
@@ -42,7 +97,6 @@
         </select>
         <br><br>
 
-        <!-- Submit Button -->
         <input type="submit" value="Submit">
     </form>
 
